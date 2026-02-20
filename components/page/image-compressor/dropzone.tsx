@@ -41,7 +41,7 @@ function MyDropZone() {
         <div className="space-y-6">
           <Activity mode={files.length === 0 ? "visible" : "hidden"}>
             <div
-              className="border-dotted p-4 border-2 w-lg mx-auto"
+              className="border-dotted p-4 border-2 w-lg mx-auto h-30 flex justify-center items-center cursor-pointer"
               {...getRootProps()}
             >
               <input {...getInputProps()} />
@@ -49,7 +49,7 @@ function MyDropZone() {
             </div>
           </Activity>
 
-          <ul className="flex gap-2 justify-center">
+          <ul className="flex gap-2 flex-wrap justify-center">
             {files.map((file, idx) => (
               <li key={file.name}>
                 <div className="relative">
